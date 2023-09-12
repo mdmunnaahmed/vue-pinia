@@ -5,6 +5,7 @@ body {
   color: #444;
   margin: 0;
 }
+
 body * {
   font-family: "Poppins";
 }
@@ -18,10 +19,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 header img {
   max-width: 60px;
   transform: rotate(-10deg);
 }
+
 header h1 {
   margin: 0;
   font-size: 2em;
@@ -29,4 +32,98 @@ header h1 {
   margin-left: 15px;
   color: #777;
   transform: rotate(2deg);
+}
+
+.task-list {
+  max-width: 640px;
+  margin: 20px auto;
+}
+
+.task {
+  padding: 6px 20px;
+  background: white;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 02px 4px 6px #00000007;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task h3,
+.task .icons {
+  display: inline-block;
+}
+
+.task .icons {
+  text-align: right;
+  height: auto;
+}
+
+.task i {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #bbb;
+}
+
+.task i.active {
+  color: red;
+}
+
+.filter {
+  width: 640px;
+  margin: 10px auto;
+  text-align: right;
+}
+
+.filter button {
+  display: inline-block;
+  margin-left: 10px;
+  background: white;
+  border: 2px solid #555;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-family: 1rem;
+}
+
+.new-task-form {
+  background: #e7e7e7;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+form button {
+  background: #ffd859;
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  min-width: 100px;
+}
+
+form input {
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.loading {
+  max-width: 640px;
+  border: 1px solid #ffd859;
+  color: #313131;
+  padding: 6px 0;
+  text-align: center;
+  margin: 30px auto;
+  background-color: #ffd85945;
 }
