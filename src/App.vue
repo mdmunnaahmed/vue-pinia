@@ -31,7 +31,9 @@
       </div>
     </div>
 
-    <button @click="TaskStore.$reset">Reset</button>
+    <div class="" style="text-align: center">
+      <button @click="TaskStore.$reset">Reset</button>
+    </div>
   </main>
 </template>
 
