@@ -16,7 +16,7 @@ export const useTaskStore = defineStore("taskStore", {
       this.isLoading = false;
     },
     async addTask(task) {
-      await this.tasks.push(task);
+      this.tasks.push(task);
       const res = await fetch("http://localhost:3000/tasks", {
         method: "POST",
         body: JSON.stringify(task),
